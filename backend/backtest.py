@@ -211,5 +211,10 @@ def run_example(symbol="MSFT", period="2y", interval="1d", short_window=10, long
     print("Backtest saved to DB with id:", bt_id)
     print("Results:", results)
 
+#if __name__ == "__main__":
+#    run_example("AAPL")
+
 if __name__ == "__main__":
-    run_example("AAPL")
+    symbols = ["AAPL","MSFT","TSLA"]
+    for s in symbols:
+        run_example(symbol=s)
