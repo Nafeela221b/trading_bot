@@ -200,7 +200,7 @@ def save_backtest_results(name, symbol, df, results, trades_list, short_window, 
 
     return backtest_id
 
-def run_example(symbol="AAPL", period="2y", interval="1d", short_window=20, long_window=50):
+def run_example(symbol="MSFT", period="2y", interval="1d", short_window=10, long_window=40):
     print(f"Fetching {symbol} data...")
     df = fetch_ohlc(symbol, period=period, interval=interval)
     print("Fetched OHLC data:\n", df.head())
