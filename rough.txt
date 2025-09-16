@@ -1,7 +1,0 @@
-postgresql://trader:password@localhost:5432/trading_db
-
-https://github.com/Nafeela221b/trading_bot
-
-git remote add origin https://github.com/Nafeela221b/trading_bot.git
-
-SELECT id, name, symbol, total_return_pct, max_drawdown_pct, sharpe, n_trades, created_at FROM backtests ORDER BY created_at DESC;
